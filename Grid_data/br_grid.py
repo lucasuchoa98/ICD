@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Feb 21 13:47:24 2019
-
-@author: Lucas
-"""
 import pandas as pd
 import h5py
 import plotly.plotly as py
@@ -39,9 +33,9 @@ for i in range(len(lat)):
         list_lat.append(lat[i])
         list_long.append(long[j])
         grid.append(coord)
- 
+
 br_lat = []
-br_long = []      
+br_long = []
 for k in range(len(grid)):
     if grid[k][2] != 127:
         br_lat.append(grid[k][0])
@@ -73,14 +67,3 @@ layout = go.Layout(
 
 fig = dict(data=data, layout=layout)
 py.iplot(fig, filename='Coordenadas_BR')
-    
-    
-    
-    
-    
-    
-    
-    
-
-        
-      
