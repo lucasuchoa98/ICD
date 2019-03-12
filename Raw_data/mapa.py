@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jan 10 13:32:27 2019
-
-@author: Usuário
-"""
 import plotly.plotly as py
 import plotly.graph_objs as go
 
@@ -12,7 +6,7 @@ import pandas as pd
 
 npzfile = np.load('prec_raw.npz')
 latlon = npzfile['latlon']
-df_latlon = pd.DataFrame(latlon) 
+df_latlon = pd.DataFrame(latlon)
 
 mapbox_access_token = 'pk.eyJ1IjoibHVjYXN1Y2hvYSIsImEiOiJjanFxdjVjNjMwZjcwM3htdm9pbzViOW4wIn0.E8WOGX1mAGUjr0O4fbcXVA'
 
