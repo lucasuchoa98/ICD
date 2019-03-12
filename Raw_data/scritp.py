@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jan  8 15:06:40 2019
-
-@author: Usuário
-"""
 import plotly.plotly as py
 import plotly.graph_objs as go
 
@@ -22,7 +16,7 @@ days = npzfile['days']
 df_var = pd.DataFrame(var).T
 #outro jeito de ter a serie de dias do df_days, achei melhor pois tem mais conteudo desse formato na web
 nday = pd.date_range('1/1/1980',periods=13149,freq='D')
-df_latlon = pd.DataFrame(latlon) 
+df_latlon = pd.DataFrame(latlon)
 df_days = pd.DataFrame(days)
 
 
