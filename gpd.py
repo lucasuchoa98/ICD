@@ -6,14 +6,14 @@ Created on Thu Feb 28 16:14:49 2019
 """
 import geopandas as gpd
 import h5py
-import pandas as pd
-from shapely.geometry import Point
+#import pandas as pd
+#from shapely.geometry import Point
 
 filename = 'prec.nc'
 f = h5py.File(filename, 'r')
 
 # List all groups
-for i in f.keys():
+"""for i in f.keys():
     print(i)
 
 data1 = list(f.keys())[0]
@@ -44,17 +44,18 @@ for k in range(len(grid)):
     if grid[k][2] != 127:
         br_lat.append(grid[k][0])
         br_long.append(grid[k][1])
+"""
+
 
 shape = gpd.read_file("regioes_hidrograficas.shp")
-rio = shape[shape.index==1]
+rio = shape[shape.index==10]
 
+"""
 df = pd.DataFrame()
 df['coordinates'] = list(zip(br_lat,br_long))
 df['coordinates'] = df['coordinates'].apply(Point)
 gdf = gpd.GeoDataFrame(df, geometry='coordinates')
-
-rio.within()
-
+"""
 
 #for i in shape:
  #   print(i)
