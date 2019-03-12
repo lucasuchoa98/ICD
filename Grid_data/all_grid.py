@@ -1,14 +1,7 @@
-
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Feb 12 09:35:26 2019
-
-@author: Lucas
-"""
 import plotly.plotly as py
 import plotly.graph_objs as go
 import h5py
-import plotly 
+import plotly
 plotly.tools.set_credentials_file(username='mateus.normande', api_key='64glegfYYWD1va1j3Gu2')
 
 filename = 'prec.nc'
